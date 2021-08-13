@@ -1,6 +1,7 @@
 const { Schema, model } = require("mongoose");
 const schema = new Schema({
   // модель построена по примеру, я лично без понятие что они означают
+  token: { type: String, required: true },
   sendMessage: {
     request: {
       messageInfo: {

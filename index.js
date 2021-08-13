@@ -20,7 +20,7 @@ const startParse = (url) => {
   });
 };
 let url = path.join(__dirname, "notif_1.xml"); // путь к файлу
-//startParse("notif_1.xml"); // закуск парсинг xml
+startParse("notif_1.xml"); // закуск парсинг xml
 app.use("/api", api);
 const start = async () => {
   try {

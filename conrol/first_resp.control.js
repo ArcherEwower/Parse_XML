@@ -29,7 +29,7 @@ class Control {
       const model = new Model({
         ...req.body,
       });
-      model.save();
+      await model.save();
       return res.send(true);
     } catch (e) {
       console.log(e);
